@@ -2,16 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-const green = '#ADD8E6';
+const back = '#FFE4E1';
 const yellow = 'rgb(1, 139, 252)';
-
 
 class Square extends React.Component {
     constructor (props) {
         super(props);
         this.state = {
             value: this.props.value,
-            color: green
+            color: back
         };
         this.changeColor = this.changeColor.bind(this);
     }
@@ -89,14 +88,16 @@ class Square extends React.Component {
   class Game extends React.Component {
     render() {
       return (
-        <div className="game">
-          <div className="game-board">
-            <Board />
-          </div>
-          <div className="game-info">
-            <div>{/* status */}</div>
-            <ol>{/* TODO */}</ol>
-          </div>
+        <div className="body">
+            <div className="game">
+            <div className="game-board">
+                <Board />
+            </div>
+            <div className="game-info">
+                <div></div>
+                <ol></ol>
+            </div>
+            </div>
         </div>
       );
     }
