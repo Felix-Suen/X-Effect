@@ -40,7 +40,7 @@ class Square extends React.Component {
     }
   
     render() {
-      const status = 'X factor';
+      const status = 'X Effect';
   
       return (
         <div>
