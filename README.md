@@ -1,2 +1,2 @@
-# X Factor React App
+# X Effect React App
 ## Stop addiction, build habits
